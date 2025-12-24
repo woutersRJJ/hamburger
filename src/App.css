@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
+/* Hamburger Icon */
+.hamburger {
+    width: 30px;
+    cursor: pointer;
+    margin: 20px;
+    z-index: 1000;
+    position: absolute;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Animation when open */
+.hamburger.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Menu */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 160px;
+    height: 100%;
+    background: #0a1a3f;
+    padding-top: 60px;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.menu.show {
+    left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
 }
+
+.menu a:hover {
+    background: #444;
+}
+
+main {
+    padding: 80px 20px;
+}
+
+.menu button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background: #444;
+}
+
+/* styles.css */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: linear-gradient(to right, #5f74a7, #2f3f66);
+    color: #e5e7eb;
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2, p{
+    text-align: center;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.movie-card {
+    display: flex;
+    align-items: center;   /* vertically centers both sides */
+    background:#7c6b6b;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+/* Left side image */
+.movie-image {
+    width: 140px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;        /* prevents shrinking */
+}
+
+/* Right side content centered horizontally */
+.movie-info {
+    flex: 1;               /* takes up remaining space */
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    flex-direction: column;
+    text-align: center;      /* centers text inside */
+}
+
+.movie-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.55);
+}
+
+/* Image stays on the left */
+.movie-image {
+    width: 97px;        /* adjust as needed */
+    #height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;      /* prevents shrinking */
+}
+
+.movie-info {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    flex-direction: column;
+    width: fit-content; /* or any fixed width */ margin: 0
+}
+
+.movie-title {
+    font-size: 1.1rem;
+    margin: 0 0 0.3rem;
+    color: #fff;
+}
+
+.movie-year {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #b5b5b5;
+}
+
+ul {
+    display: grid;
+    justify-content: center; /* centers the whole list horizontally */
+    gap: 1rem; /* optional spacing between items */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* remove bullets */ }
+
+li{
+    text-align: center;
+}
+
+.list-container {
+    max-height: 120px; /* adjust as needed */
+    overflow-y: auto;  /* adds scrollbar when needed */
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+
+.list {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.list.collapsed {
+    max-height: 120px; /* visible area */
+}
+
+.list.expanded {
+    max-height: 1000px; /* large enough to show all */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
