@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "./static/css/main.dc7000d3.css",
+    "main.js": "./static/js/main.7c6a9fcf.js",
+    "static/js/453.ee8c4e2d.chunk.js": "./static/js/453.ee8c4e2d.chunk.js",
+    "static/media/pulpfiction.png": "./static/media/pulpfiction.878c31df155ab02f268d.png",
+    "static/media/seven.png": "./static/media/seven.29b016adcd3ea5bb922c.png",
+    "static/media/titanic.png": "./static/media/titanic.a6bb871d034ee17c05ff.png",
+    "static/media/matrix.png": "./static/media/matrix.d96d40c54ada781f2b9f.png",
+    "static/media/heat.png": "./static/media/heat.4f2a34e11b06d9c9f44e.png",
+    "static/media/schindler.png": "./static/media/schindler.ab428cb54e9d8f1a2356.png",
+    "static/media/jurassic.png": "./static/media/jurassic.a3bb9b2eadacc33c9a78.png",
+    "static/media/platoon.png": "./static/media/platoon.a3966616430a52052678.png",
+    "static/media/lion.png": "./static/media/lion.a50f2790ed9ee2118f2b.png",
+    "static/media/forest.png": "./static/media/forest.4494470ce81ad480b291.png",
+    "static/media/gladiator.png": "./static/media/gladiator.df10a7f690eea32c389a.png",
+    "index.html": "./index.html",
+    "main.dc7000d3.css.map": "./static/css/main.dc7000d3.css.map",
+    "main.7c6a9fcf.js.map": "./static/js/main.7c6a9fcf.js.map",
+    "453.ee8c4e2d.chunk.js.map": "./static/js/453.ee8c4e2d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc7000d3.css",
+    "static/js/main.7c6a9fcf.js"
+  ]
+}
