@@ -192,6 +192,11 @@ li{
     max-height: 1000px; /* large enough to show all */
 }
 
+button{
+    width:100px;
+    display: block; margin: 10px auto 0;
+}
+
 
 
 

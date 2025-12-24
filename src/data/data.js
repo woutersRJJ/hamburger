@@ -13,23 +13,27 @@ import platoon from '../img/platoon.png'
 export const SERIES_DATA = [
     {
         name: 'Fawlty Towers',
-        period: 'Seventies',
+        period: '70s',
         figuranten: ['Basil', 'Mrs. Fawlty', 'Manuel', 'Polly', 'The kitchen chef', 'The Major']
     },
     {
         name: 'Twin Peaks',
-        period: 'Nineties',
+        period: '90s',
         figuranten: ['FBI agent Dale Cooper', 'Laura Palmer', 'Mädchen Amick', 'Sheryl Lee', 'Sherilyn Fenn', 'Lara Flynn Boyle']
     },
     {
-        name: 'Keeping Up Appearances',
-        period: 'Nineties',
+        name: 'Keeping up Appearances',
+        period: '90s',
         figuranten: ['Hyacinth Bouquet', 'Richard', 'The Vicar', 'Onslow', 'Rose', 'Elizabeth', 'Violet', 'Emmet', 'The Dominee', 'Sheridan', 'The Postman', 'Counsellor Mrs. Nugent', 'The Milkman']
     },
-    {name: 'Planet of the Apes', period: 'Seventies', figuranten: ['General Urko', 'Zaius', 'Kira', 'Jason', 'Tolar']},
+    {
+        name: 'Planet of the Apes',
+        period: '70s',
+        figuranten: ['General Urko', 'Zaius', 'Kira', 'Jason', 'Tolar']
+    },
     {
         name: 'The X-Files',
-        period: 'Nineties',
+        period: '90s',
         figuranten: ['Fox Mulder', 'Dana scully', 'Walter Skiner', 'Special FBI Agent Miller']
     },
 ]

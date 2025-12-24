@@ -46,7 +46,7 @@ function Films() {
         <>
             <h1>Films</h1>
             <div className="movie-grid">
-                {FILMS_DATA.map((f, index) => <Film film={f} key={index}/>)}
+                {FILMS_DATA.sort((a,b)=>a.title.localeCompare(b.title)).map((f, index) => <Film film={f} key={index}/>)}
             </div>
         </>
     );
@@ -57,7 +57,7 @@ function Regisseurs() {
         <>
             <h1>Regisseurs</h1>
             <div className="movie-grid">
-                {REGISSEURS_DATA.map((r, index) => <Regisseur regisseur={r} key={index}/>)}
+                {REGISSEURS_DATA.sort((a,b)=>a.name.localeCompare(b.name)).map((r, index) => <Regisseur regisseur={r} key={index}/>)}
             </div>
         </>
     );
@@ -68,7 +68,7 @@ function Series() {
         <>
             <h1>Series</h1>
             <div className="movie-grid">
-                {SERIES_DATA.map((s, index) => <Serie serie={s} key={index}/>)}
+                {SERIES_DATA.sort((a,b)=>a.name.localeCompare(b.name)).map((s, index) => <Serie serie={s} key={index}/>)}
             </div>
         </>
     );
@@ -96,9 +96,9 @@ function Regisseur({regisseur}) {
         <div className="movie-info">
             <div>
                 <h2>{regisseur.name}</h2>
-                <h2>{regisseur.country}</h2>
+                <h3>{regisseur.country}</h3>
             </div>
-            <p>Films</p>
+            <h4>Films</h4>
             <div className="list-container">
                 <ul>
                     {regisseur.movies.map((movie,index) => <li key={index}>{movie}</li>)}
@@ -119,16 +119,16 @@ function Serie({serie}) {
         <div className="movie-info">
             <div>
                 <h2>{serie.name}</h2>
-                <h2>{serie.period}</h2>
+                <h3>{serie.period}</h3>
             </div>
-            <p>Figuranten</p>
+            <h4>Figuranten</h4>
             <div className={expanded ? "list expanded" : "list collapsed"}>
                 <ul>
                     {serie.figuranten.map((figurant,index) => <li key={index}>{figurant}</li>)}
                 </ul>
             </div>
             <button onClick={toggle} id="toggle">
-                {expanded?'Show less':'Show more'}
+                {expanded?'Toon minder':'Toon meer'}
             </button>
         </div>
     </div>
